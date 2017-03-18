@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activity.SampleActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sample_demo"
+        android:id="@+id/sample_demo"
+        android:layout_alignParentTop="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sample_forward"
+        android:id="@+id/btn_forward"
+        android:layout_below="@+id/sample_demo"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sample_dialog"
+        android:id="@+id/btn_dialog"
+        android:layout_below="@+id/btn_forward"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sample_toast"
+        android:id="@+id/btn_toast"
+        android:layout_below="@+id/btn_dialog"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sample_state"
+        android:id="@+id/btn_inverse"
+        android:layout_below="@+id/btn_toast"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sample_checkbox"
+        android:id="@+id/checkbox"
+        android:layout_alignTop="@+id/btn_inverse"
+        android:layout_centerHorizontal="true"
+        android:checked="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sample_lifecycle_label"
+        android:id="@+id/tv_lifecycle_label"
+        android:layout_below="@+id/btn_inverse" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_lifecycle_value"
+        android:layout_alignTop="@+id/tv_lifecycle_label"
+        android:layout_toRightOf="@+id/tv_lifecycle_label" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DelayedTask测试"
+        android:id="@+id/btn_delay_task"
+        android:layout_below="@+id/tv_lifecycle_label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="网络请求回调"
+        android:id="@+id/btn_callback"
+        android:layout_below="@+id/btn_delay_task"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

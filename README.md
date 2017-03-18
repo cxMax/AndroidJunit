@@ -2,6 +2,10 @@
 ## introduction
 This is android JUnit test demo ,the sample usage of robolectric .
 
+## project dependences
+butterknife : http://jakewharton.github.io/butterknife/  
+robolctric :　http://robolectric.org/
+
 ## robolctric's error solution
 blog : http://blog.csdn.net/misea/article/details/50436215
 
