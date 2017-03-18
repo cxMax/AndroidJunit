@@ -2,6 +2,9 @@
 ## introduction
 This is android JUnit test demo ,the sample usage of robolectric .
 
+## robolctric's error solution
+blog : http://blog.csdn.net/misea/article/details/50436215
+
 ## thanks for
 usage blog : http://www.jianshu.com/p/3aa0e4efcfd3  
 android project demo : https://github.com/geniusmart/LoveUT 
