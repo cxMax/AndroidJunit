@@ -6,8 +6,10 @@ This is android JUnit test demo ,the sample usage of robolectric .
 blog : http://blog.csdn.net/misea/article/details/50436215
 
 ## thanks for
-usage blog : http://www.jianshu.com/p/3aa0e4efcfd3  
-android project demo : https://github.com/geniusmart/LoveUT 
+usage blog :   
+http://www.jianshu.com/p/3aa0e4efcfd3  
+https://segmentfault.com/a/1190000002904944  
+android project demo : https://github.com/geniusmart/LoveUT  
 official tutorial : http://robolectric.org/getting-started/  
 official usage sample : https://github.com/robolectric/robolectric-samples  
 
