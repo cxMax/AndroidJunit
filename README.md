@@ -5,6 +5,7 @@ This is android JUnit test demo ,the sample usage of robolectric .
 ## project dependences
 butterknife : http://jakewharton.github.io/butterknife/  
 robolctric :　http://robolectric.org/
+retrofit : http://square.github.io/retrofit/  
 
 ## robolctric's error solution
 some typical and usual errors: http://blog.csdn.net/misea/article/details/50436215  

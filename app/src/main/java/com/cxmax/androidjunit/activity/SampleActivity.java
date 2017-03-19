@@ -1,5 +1,6 @@
 package com.cxmax.androidjunit.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -78,6 +79,7 @@ public class SampleActivity extends AppCompatActivity {
             case R.id.btn_delay_task:
                 break;
             case R.id.btn_callback:
+                callback(view);
                 break;
         }
     }
@@ -92,7 +94,11 @@ public class SampleActivity extends AppCompatActivity {
         Toast.makeText(this,"Robolectric JUnit Test",Toast.LENGTH_LONG).show();
     }
 
-    public void inverse(View view) {
+    private void inverse(View view) {
         checkbox.setChecked(!checkbox.isChecked());
+    }
+
+    private void callback(View view) {
+        startActivity(new Intent(this,HttpRequestActivity.class));
     }
 }
