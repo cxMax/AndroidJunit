@@ -1,24 +1,25 @@
 package com.cxmax.androidjunit.activity;
 
 import android.app.Activity;
-import android.content.Intent;
+import android.content.ComponentName;
 import android.widget.Button;
 
 import com.cxmax.androidjunit.BuildConfig;
 import com.cxmax.androidjunit.R;
 
-import junit.framework.Assert;
-
+import org.hamcrest.CoreMatchers;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricGradleTestRunner;
-import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
-import org.robolectric.shadows.ShadowApplication;
+import org.robolectric.shadows.ShadowActivity;
 
 import butterknife.BindView;
+
+import static org.robolectric.Shadows.shadowOf;
 
 /**
  * @describe :
@@ -28,6 +29,7 @@ import butterknife.BindView;
  * Created by cxmax on 2017/3/18.
  */
 @RunWith(RobolectricGradleTestRunner.class)
+//@Config(sdk = 21)
 @Config(constants = BuildConfig.class, sdk = 21)
 public class MainActivityTest {
 
@@ -46,7 +48,7 @@ public class MainActivityTest {
      */
     @Test
     public void titleIsCorrect() throws Exception {
-        Activity activity = Robolectric.setupActivity(MainActivity.class);
+        Activity activity = Robolectric.buildActivity(MainActivity.class).create().start().visible().get();
         Assert.assertTrue(activity.getTitle().equals("Deckard"));
     }
 
@@ -57,8 +59,8 @@ public class MainActivityTest {
     @Test
     public void jumpNewActivity() throws Exception {
         jump.performClick();
-        Intent excepted = new Intent(mainActivity, SampleActivity.class);
-        Intent actual = ShadowApplication.getInstance().getNextStartedActivity();
-        Assert.assertEquals(excepted , actual);
+        Activity activity = Robolectric.buildActivity(MainActivity.class).create().start().visible().get();
+        ShadowActivity shadowActivity = shadowOf(activity);
+        Assert.assertThat(shadowActivity.peekNextStartedActivityForResult().intent.getComponent(), CoreMatchers.equalTo(new ComponentName(activity , ShadowActivity.class)));
     }
 }

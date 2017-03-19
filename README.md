@@ -7,8 +7,18 @@ butterknife : http://jakewharton.github.io/butterknife/
 robolctric :　http://robolectric.org/
 
 ## robolctric's error solution
-blog : http://blog.csdn.net/misea/article/details/50436215
+some typical and usual errors: http://blog.csdn.net/misea/article/details/50436215  
+````
+Invalid default: public abstract java.lang.Class org.robolectric.annotation.Config.application()
+````
++ solution :  
+ http://blog.csdn.net/yuanyl/article/details/50963219  
+ https://github.com/robolectric/robolectric/issues/1620    
+  http://stackoverflow.com/questions/5896088/testing-that-button-starts-an-activity-with-robolectric/23480546#23480546  
 
+## ButterKnife error solution
+generate plugin :　Zelezny  
+build gradle : http://blog.csdn.net/ma_yangyang/article/details/53943198  
 ## thanks for
 usage blog :   
 http://www.jianshu.com/p/3aa0e4efcfd3  
