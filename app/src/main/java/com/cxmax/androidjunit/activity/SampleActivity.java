@@ -1,11 +1,13 @@
 package com.cxmax.androidjunit.activity;
 
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.cxmax.androidjunit.R;
 
@@ -59,10 +61,13 @@ public class SampleActivity extends AppCompatActivity {
             case R.id.btn_forward:
                 break;
             case R.id.btn_dialog:
+                showDialog(view);
                 break;
             case R.id.btn_toast:
+                showToast(view);
                 break;
             case R.id.btn_inverse:
+                inverse(view);
                 break;
             case R.id.checkbox:
                 break;
@@ -75,5 +80,19 @@ public class SampleActivity extends AppCompatActivity {
             case R.id.btn_callback:
                 break;
         }
+    }
+
+    private void showDialog(View view){
+        AlertDialog alertDialog = new AlertDialog.Builder(this).setMessage(R.string.sample_dialog_message)
+                .setTitle(R.string.sample_dialog_title).create();
+        alertDialog.show();
+    }
+
+    private void showToast(View view){
+        Toast.makeText(this,"Robolectric JUnit Test",Toast.LENGTH_LONG).show();
+    }
+
+    public void inverse(View view) {
+        checkbox.setChecked(!checkbox.isChecked());
     }
 }
