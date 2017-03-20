@@ -16,6 +16,17 @@ Invalid default: public abstract java.lang.Class org.robolectric.annotation.Conf
  http://blog.csdn.net/yuanyl/article/details/50963219  
  https://github.com/robolectric/robolectric/issues/1620    
   http://stackoverflow.com/questions/5896088/testing-that-button-starts-an-activity-with-robolectric/23480546#23480546  
+  
+    
+when run JUnit method , it always in download progress and download forever 
+```
+Downloading: com/ibm/icu/icu4j/53.1/icu4j-53.1.jar from repository sonatype at https://oss.sonatype.org/content/groups/public/
+Downloading: org/robolectric/android-all/5.0.0_r2-robolectric-1/android-all-5.0.0_r2-robolectric-1.jar from repository sonatype at https://oss.sonatype.org/content/groups/public/
+Transferring 41864K from sonatype
+Transferring 9482K from sonatype
+```
++ solution :   
+https://github.com/robolectric/robolectric/issues/2987#issuecomment-287744300
 
 ## ButterKnife error solution
 generate plugin :　Zelezny  
