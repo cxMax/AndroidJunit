@@ -26,9 +26,9 @@ Transferring 41864K from sonatype
 Transferring 9482K from sonatype
 ```
 + solution :   
-https://github.com/robolectric/robolectric/issues/2987#issuecomment-287744300
-http://codeblast.com/2015/05/13/using-robolectric-in-offline-mode/
-http://robolectric.org/blog/2017/03/01/hermetic-builds/
+https://github.com/robolectric/robolectric/issues/2987#issuecomment-287744300  
+http://codeblast.com/2015/05/13/using-robolectric-in-offline-mode/  
+http://robolectric.org/blog/2017/03/01/hermetic-builds/  
 
 ## ButterKnife error solution
 generate plugin :　Zelezny  
