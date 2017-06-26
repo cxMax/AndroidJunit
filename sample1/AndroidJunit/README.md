@@ -30,9 +30,16 @@ https://github.com/robolectric/robolectric/issues/2987#issuecomment-287744300
 http://codeblast.com/2015/05/13/using-robolectric-in-offline-mode/  
 http://robolectric.org/blog/2017/03/01/hermetic-builds/  
 
+```
+"No such manifest file: build/intermediates/bundles/debug/AndroidManifest.xml" : 
+```
++ solution :   
+https://github.com/robolectric/robolectric/issues/2949
+
 ## ButterKnife error solution
 generate plugin :　Zelezny  
 build gradle : http://blog.csdn.net/ma_yangyang/article/details/53943198  
+
 ## thanks for
 usage blog :   
 http://www.jianshu.com/p/3aa0e4efcfd3  

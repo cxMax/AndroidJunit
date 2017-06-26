@@ -1,8 +1,7 @@
 #　Junit-sample
 
 ## introduce 
-Before I finish this practise project I know nothing about how wo write Junit in android project.
-But I can do it until I learn the below tech-knowledge
+the project coeds are picked from [Mockito Official Demo](https://static.javadoc.io/org.mockito/mockito-core/2.8.9/org/mockito/Mockito.html#7)
 
 ## references
 [Junit 4](http://junit.org/junit4/)  
