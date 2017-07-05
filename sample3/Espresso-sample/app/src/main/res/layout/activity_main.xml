@@ -38,12 +38,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
         android:text="@string/open_activity_and_change_text" />
 
     <Button
         android:id="@+id/activityCalculatorBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
         android:layout_gravity="center_horizontal"
         android:text="@string/open_calculator_activity" />
 </LinearLayout>

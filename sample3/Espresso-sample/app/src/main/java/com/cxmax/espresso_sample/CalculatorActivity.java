@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -102,7 +101,6 @@ public class CalculatorActivity extends Activity {
     }
 
     static protected Intent newStartIntent(Context context) {
-        Intent newIntent = new Intent(context, CalculatorActivity.class);
-        return newIntent;
+        return new Intent(context, CalculatorActivity.class);
     }
 }
