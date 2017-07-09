@@ -1,4 +1,4 @@
-package com.cxmax.espresso_sample;
+package com.cxmax.espresso_sample.espresso;
 
 import android.support.test.runner.AndroidJUnit4;
 import android.test.suitebuilder.annotation.SmallTest;

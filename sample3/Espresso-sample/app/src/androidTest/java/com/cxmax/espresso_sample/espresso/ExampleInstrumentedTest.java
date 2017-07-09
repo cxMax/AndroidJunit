@@ -1,4 +1,4 @@
-package com.cxmax.espresso_sample;
+package com.cxmax.espresso_sample.espresso;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

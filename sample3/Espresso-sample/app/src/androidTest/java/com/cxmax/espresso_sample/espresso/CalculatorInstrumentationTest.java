@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cxmax.espresso_sample;
+package com.cxmax.espresso_sample.espresso;
 
 import junit.framework.TestSuite;
 
@@ -29,6 +29,9 @@ import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 import android.support.test.runner.AndroidJUnitRunner;
 import android.test.ActivityInstrumentationTestCase2;
+
+import com.cxmax.espresso_sample.CalculatorActivity;
+import com.cxmax.espresso_sample.R;
 
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.action.ViewActions.click;

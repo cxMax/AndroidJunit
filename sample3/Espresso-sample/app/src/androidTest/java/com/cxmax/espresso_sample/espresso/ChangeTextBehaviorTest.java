@@ -1,8 +1,12 @@
-package com.cxmax.espresso_sample;
+package com.cxmax.espresso_sample.espresso;
 
+import android.support.test.espresso.matcher.ViewMatchers;
 import android.support.test.filters.LargeTest;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
+
+import com.cxmax.espresso_sample.MainActivity;
+import com.cxmax.espresso_sample.R;
 
 import org.junit.Rule;
 import org.junit.Test;
@@ -35,7 +39,7 @@ public class ChangeTextBehaviorTest {
 
     @Test
     public void changeText_sameActivity() {
-        onView(withId(R.id.editTextUserInput))
+        onView(ViewMatchers.withId(R.id.editTextUserInput))
                 .perform(typeText(STRING_TO_BE_TYPED), closeSoftKeyboard());
         onView(withId(R.id.changeTextBt)).perform(click());
 

@@ -1,5 +1,5 @@
 
-package com.cxmax.espresso_sample;
+package com.cxmax.espresso_sample.espresso;
 
 import android.support.test.espresso.matcher.BoundedMatcher;
 

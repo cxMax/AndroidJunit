@@ -10,6 +10,9 @@ Robolctric's learning path plz [click here](https://github.com/cxMax/AndroidJuni
 Mockito's learning path plz [click here](https://github.com/cxMax/AndroidJunit/blob/master/sample2/Junit-sample/README.md)
 
 
+* [sample3](https://github.com/cxMax/AndroidJunit/tree/master/sample3/Espresso-sample) :  primary focus on the usage of [Espresso](https://google.github.io/android-testing-support-library/docs/espresso/) and [Uiautomator](https://github.com/googlesamples/android-testing/tree/master/ui/uiautomator/BasicSample)  
+Espresso and Uiautomator's learning path plz [click here](https://github.com/cxMax/AndroidJunit/blob/master/sample3/Espresso-sample/README.md)
+
 ## License
    Copyright (C) 2017 cxMax
    Copyright (C) 2017 AndroidJunit

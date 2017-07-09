@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cxmax.espresso_sample;
+package com.cxmax.espresso_sample.espresso;
 
 import org.junit.Before;
 import org.junit.Test;

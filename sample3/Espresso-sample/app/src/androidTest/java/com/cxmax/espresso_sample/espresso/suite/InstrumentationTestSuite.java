@@ -14,14 +14,18 @@
  * limitations under the License.
  */
 
-package com.cxmax.espresso_sample.suite;
+package com.cxmax.espresso_sample.espresso.suite;
+
+
+import com.cxmax.espresso_sample.espresso.CalculatorInstrumentationTest;
+import com.cxmax.espresso_sample.espresso.OperationHintLegacyInstrumentationTest;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
 /**
- * Test suite that runs all tests, unit + instrumentation tests.
+ * Runs all Junit3 and Junit4 Instrumentation tests.
  */
 @RunWith(Suite.class)
-@Suite.SuiteClasses({UnitTestSuite.class, InstrumentationTestSuite.class})
-public class AndroidTestSuite {}
+@Suite.SuiteClasses({CalculatorInstrumentationTest.class, OperationHintLegacyInstrumentationTest.class})
+public class InstrumentationTestSuite {}

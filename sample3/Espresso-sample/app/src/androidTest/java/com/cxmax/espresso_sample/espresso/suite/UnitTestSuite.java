@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.cxmax.espresso_sample.suite;
+package com.cxmax.espresso_sample.espresso.suite;
 
-import com.cxmax.espresso_sample.CalculatorAddParameterizedTest;
-import com.cxmax.espresso_sample.CalculatorTest;
+import com.cxmax.espresso_sample.espresso.CalculatorAddParameterizedTest;
+import com.cxmax.espresso_sample.espresso.CalculatorTest;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
