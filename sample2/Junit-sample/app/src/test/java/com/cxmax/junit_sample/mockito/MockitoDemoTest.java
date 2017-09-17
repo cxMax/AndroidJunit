@@ -1,6 +1,6 @@
 package com.cxmax.junit_sample.mockito;
 
-import com.cxmax.junit_sample.junit.Calculater;
+import com.cxmax.junit_sample.junit.Calculator;
 
 import org.junit.Assert;
 import org.junit.Before;
@@ -239,7 +239,7 @@ public class MockitoDemoTest {
 
     @Test
     public void testAnnotations() {
-        MockitoAnnotations.initMocks(Calculater.class);
+        MockitoAnnotations.initMocks(Calculator.class);
     }
 
     @Test

@@ -3,8 +3,7 @@ package com.cxmax.junit_sample.junit;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
+import org.mockito.Mockito;
 
 /**
  * @describe :
@@ -13,20 +12,21 @@ import static org.junit.Assert.*;
  * <p>
  * Created by cxmax on 2017/6/19.
  */
-public class CalculaterTest {
+public class CalculatorTest {
 
-    Calculater calculater ;
+    private Calculator calculator;
 
     @Before
     public void setUp() {
-        calculater = new Calculater();
+        calculator = new Calculator();
     }
 
     @Test
     public void sum() throws Exception {
         int a = 1;
         int b = 3;
-        int result = calculater.sum(a , b);
+        Mockito.when(Calculator.Utils.checkParamsNotNull()).thenReturn(true);
+        int result = calculator.sum(a , b);
         Assert.assertTrue(result == 4);
     }
 
